@@ -41,7 +41,7 @@ library
   other-modules:
     Prelude
   build-depends:
-    , base-noprelude >= 4.10.1.0 && < 4.13
+    , base-noprelude >= 4.10.1.0 && < 5
     , semirings >= 0.3
     , integer-gmp
   ghc-options:
