@@ -6,6 +6,8 @@
 
 module Fib
   ( Fib(..)
+  , phi
+  , fib
   ) where
 
 data Fib a = Fib a a
@@ -28,7 +30,7 @@ instance Ring a => Ring (Fib a) where
 
 instance Applicative Fib where
   pure x = Fib x x
-  {-# inline pure #-} 
+  {-# inline pure #-}
   Fib fa fb <*> Fib a b = Fib (fa a) (fb b)
   {-# inline (<*>) #-}
 
