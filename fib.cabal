@@ -2,7 +2,7 @@ cabal-version: 2.4
 name:
   fib
 version:
-  0.1
+  0.1.0.1
 synopsis:
   fibonacci algebra
 description:
